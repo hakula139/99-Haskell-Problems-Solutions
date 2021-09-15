@@ -31,7 +31,7 @@
       },
       "label": "haskell build",
       "type": "shell",
-      //"command": "cabal configure && cabal build"
+      // "command": "cabal configure && cabal build"
       "command": "stack build"
     },
     {

@@ -14,8 +14,9 @@ dependencies:
   - base >= 4.7 && < 5
 
 ghc-options:
-  - -O3
   - -Wall
+  - -O2
+  - -optc-O3
 
 library:
   source-dirs:
