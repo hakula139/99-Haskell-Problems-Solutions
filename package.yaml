@@ -1,0 +1,36 @@
+name: "haskell-problems-solutions"
+version: 0.1.0.0
+github: "hakula139/99-Haskell-Problems-Solutions"
+license: "MIT"
+author: "Hakula Chen"
+maintainer: "i@hakula.xyz"
+copyright: "(c) 2021 Copyright Hakula"
+
+extra-source-files:
+  - README.md
+  - stack.yaml
+
+dependencies:
+  - base >= 4.7 && < 5
+
+ghc-options:
+  - -O3
+  - -Wall
+
+library:
+  source-dirs:
+    - src
+  exposed-modules:
+    - Problems.Problem01
+
+executables:
+  haskell-problems-solutions-exe:
+    main: Main.hs
+    source-dirs:
+      - app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - haskell-problems-solutions
