@@ -8,42 +8,42 @@
   },
   "tasks": [
     {
-      // F6
-      "group": "build",
+      "label": "haskell clean",
       "type": "shell",
-      "label": "haskell clean & build",
-      // "command": "cabal clean && cabal configure && cabal build"
-      // "command": "stack clean && stack build"
-      "command": "stack clean ; stack build" // for powershell
+      "command": "stack clean",
+      "group": "build"
     },
     {
-      // F6
-      "isBackground": true,
+      "label": "haskell build",
       "type": "shell",
-      "label": "haskell watch",
-      "command": "stack build --test --no-run-tests --file-watch"
-    },
-    {
-      // F7
+      "command": "stack build",
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "label": "haskell build",
-      "type": "shell",
-      // "command": "cabal configure && cabal build"
-      "command": "stack build"
+      }
     },
     {
-      // F8
+      "label": "haskell watch",
+      "type": "shell",
+      "command": "stack build --file-watch",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "haskell run",
+      "type": "shell",
+      "command": "stack exec haskell-problems-solutions-exe",
+      "dependsOn": ["haskell build"],
+      "problemMatcher": []
+    },
+    {
+      "label": "haskell test",
+      "type": "shell",
+      "command": "stack test",
       "group": {
         "kind": "test",
         "isDefault": true
-      },
-      "type": "shell",
-      "label": "haskell test",
-      // "command": "cabal test"
-      "command": "stack test"
+      }
     }
   ]
 }

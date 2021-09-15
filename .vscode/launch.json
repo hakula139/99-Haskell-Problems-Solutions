@@ -5,9 +5,9 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug with ghci (stack)",
       "type": "ghc",
       "request": "launch",
-      "name": "Debug with ghci (stack)",
       "internalConsoleOptions": "openOnSessionStart",
       "workspace": "${workspaceFolder}",
       "startup": "${workspaceFolder}/app/Main.hs",
