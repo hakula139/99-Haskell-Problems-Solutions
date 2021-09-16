@@ -30,6 +30,7 @@ library:
     - Problems.Problem05
     - Problems.Problem06
     - Problems.Problem07
+    - Problems.Problem08
 
 executables:
   solutions-exe:
