@@ -35,6 +35,7 @@ library:
     - Problems.Problem10
     - Problems.Problem11
     - Problems.Problem12
+    - Problems.Problem13
 
 executables:
   solutions-exe:
