@@ -33,6 +33,7 @@ library:
     - Problems.Problem08
     - Problems.Problem09
     - Problems.Problem10
+    - Problems.Problem11
 
 executables:
   solutions-exe:
