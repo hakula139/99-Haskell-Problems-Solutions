@@ -1,4 +1,4 @@
-name: "haskell-problems-solutions"
+name: "solutions"
 version: 0.1.0.0
 github: "hakula139/99-Haskell-Problems-Solutions"
 license: "MIT"
@@ -22,10 +22,11 @@ library:
   source-dirs:
     - src
   exposed-modules:
+    - MyUtils
     - Problems.Problem01
 
 executables:
-  haskell-problems-solutions-exe:
+  solutions-exe:
     main: Main.hs
     source-dirs:
       - app
@@ -34,4 +35,4 @@ executables:
       - -rtsopts
       - -with-rtsopts=-N
     dependencies:
-      - haskell-problems-solutions
+      - solutions

@@ -32,8 +32,7 @@
     {
       "label": "haskell run",
       "type": "shell",
-      "command": "stack exec haskell-problems-solutions-exe",
-      "dependsOn": ["haskell build"],
+      "command": "stack exec solutions-exe",
       "problemMatcher": []
     },
     {
