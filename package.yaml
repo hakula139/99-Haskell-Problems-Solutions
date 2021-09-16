@@ -29,6 +29,7 @@ library:
     - Problems.Problem04
     - Problems.Problem05
     - Problems.Problem06
+    - Problems.Problem07
 
 executables:
   solutions-exe:
