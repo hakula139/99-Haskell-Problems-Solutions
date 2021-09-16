@@ -28,8 +28,8 @@ test = do
       ]
 
 entryToSeg :: Eq a => Entry a -> [a]
-entryToSeg (Multiple count val) = replicate count val
 entryToSeg (Single val) = [val]
+entryToSeg (Multiple count val) = replicate count val
 
 decodeModified :: Eq a => [Entry a] -> [a]
 decodeModified = concatMap entryToSeg
