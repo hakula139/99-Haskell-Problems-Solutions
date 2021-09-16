@@ -13,17 +13,13 @@ test = do
   assert "Problem 03" kthNum $ elementAt nums k
   where
     nums :: [Integer]
-    nums = [1, 3 .. 999]
+    nums = [1, 3 ..]
     k = 30
     kthNum = 59
 
 elementAt :: [a] -> Int -> a
-elementAt [] _ = error "empty list"
-elementAt list@(x : rest) k
-  | k <= 0 || k > size =
-    error $
-      "index " ++ show k ++ " is out of bounds [1, " ++ show size ++ "]"
-  | k == 1 = x
+elementAt [] _ = error "index is out of bounds"
+elementAt (x : _) 1 = x
+elementAt (_ : rest) k
+  | k < 1 = error "index is out of bounds"
   | otherwise = elementAt rest $ k - 1
-  where
-    size = length list
