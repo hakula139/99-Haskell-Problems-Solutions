@@ -25,6 +25,7 @@ library:
     - MyUtils
     - Problems.Problem01
     - Problems.Problem02
+    - Problems.Problem03
 
 executables:
   solutions-exe:
