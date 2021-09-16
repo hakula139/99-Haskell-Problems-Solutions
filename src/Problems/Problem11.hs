@@ -12,15 +12,15 @@ where
 import MyUtils (assert)
 import Problems.Problem09 (pack)
 
-data Count a = Multiple Int a | Single a
+data Entry a = Multiple Int a | Single a
   deriving (Eq, Show)
 
 test :: IO ()
 test = do
-  assert "Problem 11" expected $ encodeModified str
+  assert "Problem 11" encodedStr $ encodeModified str
   where
     str = "aaaabccaadeeee"
-    expected =
+    encodedStr =
       [ Multiple 4 'a',
         Single 'b',
         Multiple 2 'c',
@@ -29,13 +29,13 @@ test = do
         Multiple 4 'e'
       ]
 
-segToCount :: Eq a => [a] -> Count a
-segToCount seg
+segToEntry :: Eq a => [a] -> Entry a
+segToEntry seg
   | count == 1 = Single val
   | otherwise = Multiple count val
   where
     count = length seg
     val = head seg
 
-encodeModified :: Eq a => [a] -> [Count a]
-encodeModified xs = map segToCount $ pack xs
+encodeModified :: Eq a => [a] -> [Entry a]
+encodeModified xs = map segToEntry $ pack xs
