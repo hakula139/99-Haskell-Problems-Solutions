@@ -13,6 +13,7 @@ import qualified Problems.Problem10 as P10
 import qualified Problems.Problem11 as P11
 import qualified Problems.Problem12 as P12
 import qualified Problems.Problem13 as P13
+import qualified Problems.Problem14 as P14
 
 main :: IO ()
 main = do
@@ -29,3 +30,4 @@ main = do
   P11.test
   P12.test
   P13.test
+  P14.test
