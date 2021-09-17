@@ -40,6 +40,7 @@ library:
     - Problems.Problem15
     - Problems.Problem16
     - Problems.Problem17
+    - Problems.Problem18
 
 executables:
   solutions-exe:
