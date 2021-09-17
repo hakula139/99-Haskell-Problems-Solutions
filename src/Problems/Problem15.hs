@@ -17,4 +17,4 @@ test = do
     expected = "aaabbbccc"
 
 repli :: [a] -> Int -> [a]
-repli xs n = concatMap (replicate n) xs
+repli = flip $ concatMap . replicate
