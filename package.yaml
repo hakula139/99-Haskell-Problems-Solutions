@@ -45,6 +45,7 @@ library:
     - Problems.Problem20
     - Problems.Problem21
     - Problems.Problem22
+    - Problems.Problem26
 
 executables:
   solutions-exe:
