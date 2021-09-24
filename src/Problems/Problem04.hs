@@ -12,8 +12,7 @@ test :: IO ()
 test = do
   assert "Problem 04" (length nums) (myLength nums)
   where
-    nums :: [Integer]
-    nums = [1 .. 99]
+    nums = [1 .. 99] :: [Integer]
 
 myLength :: [a] -> Int
 myLength [] = 0

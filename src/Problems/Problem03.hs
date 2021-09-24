@@ -12,8 +12,7 @@ test :: IO ()
 test = do
   assert "Problem 03" kthNum $ elementAt nums k
   where
-    nums :: [Integer]
-    nums = [1, 3 ..]
+    nums = [1, 3 ..] :: [Integer]
     k = 30
     kthNum = 59
 

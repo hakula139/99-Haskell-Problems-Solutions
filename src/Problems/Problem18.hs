@@ -15,8 +15,7 @@ test :: IO ()
 test = do
   assert "Problem 18" expected $ slice nums i j
   where
-    nums :: [Int]
-    nums = [1 .. 99]
+    nums = [1 .. 99] :: [Int]
     i = 30
     j = 40
     expected = [i .. j]

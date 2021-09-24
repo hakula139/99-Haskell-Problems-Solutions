@@ -12,7 +12,6 @@ test :: IO ()
 test = do
   assert "Problem 02" prevLastChar (myButLast chars)
   where
-    chars :: [Char]
     chars = ['a' .. succ prevLastChar]
     prevLastChar = 'y'
 

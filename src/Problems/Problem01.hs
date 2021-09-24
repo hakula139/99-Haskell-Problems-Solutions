@@ -12,8 +12,7 @@ test :: IO ()
 test = do
   assert "Problem 01" lastNum (myLast nums)
   where
-    nums :: [Integer]
-    nums = [0 .. lastNum]
+    nums = [0 .. lastNum] :: [Integer]
     lastNum = 999
 
 myLast :: [a] -> a

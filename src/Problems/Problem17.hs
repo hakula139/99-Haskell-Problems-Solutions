@@ -13,8 +13,7 @@ test :: IO ()
 test = do
   assert "Problem 17" expected $ split nums k
   where
-    nums :: [Int]
-    nums = [1 .. 99]
+    nums = [1 .. 99] :: [Int]
     k = 5
     expected = ([1 .. k], [k + 1 .. 99])
 

@@ -15,8 +15,7 @@ test = do
   assert "Problem 19 Test 01" expected1 $ rotate nums k1
   assert "Problem 19 Test 02" expected2 $ rotate nums k2
   where
-    nums :: [Int]
-    nums = [1 .. 100]
+    nums = [1 .. 100] :: [Int]
     k1 = 30
     expected1 = [31 .. 100] ++ [1 .. 30]
     k2 = -1020
